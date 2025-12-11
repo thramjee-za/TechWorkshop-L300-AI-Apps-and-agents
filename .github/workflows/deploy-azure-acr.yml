@@ -43,7 +43,7 @@ jobs:
           context: ./src
           file: ./src/Dockerfile
           push: true
-          tags: ${{ secrets.AZURE_CONTAINER_REGISTRY }}/techworkshop:${{ github.sha }}
+          tags: ${{ secrets.AZURE_CONTAINER_REGISTRY }}/chat-app:${{ github.sha }}
 
       - name: Remove local .env file
         if: always()
